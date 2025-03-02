@@ -1,0 +1,63 @@
+
+.dvd-page {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .video-grid {
+    display: grid; /* Usar una cuadrícula */
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+    grid-auto-rows: auto; /* Ajuste automático de filas */
+    gap: 20px; /* Espaciado entre videos */
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  
+  .video-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start; /* Asegura que los elementos estén en la parte superior */
+  }
+  
+  .video {
+    width: 100%; /* Adapta al tamaño del contenedor */
+    max-width: 200px; /* Limita el tamaño del video */
+    height: 150px;
+    border: 1px solid #ccc; /* Añade bordes para mayor visibilidad */
+    border-radius: 5px;
+  }
+  
+  .checkbox-container {
+    margin-top: 0.5rem;
+  }
+  
+  .global-checkbox {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .global-checkbox label {
+    margin-left: 0.5rem;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .row{
+    margin: 0;
+  }
+
+  video {
+    opacity: 0;
+    pointer-events: none; /* Evita que se interactúe con el elemento */
+  }
+  
