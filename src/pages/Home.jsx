@@ -16,15 +16,19 @@ const dvdTitles = [
 
 function Home() {
   return (
-    <div className="home-container">
-      <h1>Bebé Políglota</h1>
-      <ul className="dvd-list">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
+      <h1 className="text-3xl font-bold text-blue-200 mb-6">Bebé Políglota</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-4xl">
         {dvdTitles.map((title, index) => (
-          <li key={index} className="dvd-item">
-            <Link to={`/dvd/${index + 1}`}>{title}</Link>
-          </li>
+          <Link
+            key={index}
+            to={`/dvd/${index + 1}`}
+            className="bg-white shadow-lg rounded-lg p-6 text-lg text-gray-700 hover:bg-blue-100 transition duration-300 text-center flex items-center justify-center min-h-[100px]"
+          >
+            {title}
+          </Link>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

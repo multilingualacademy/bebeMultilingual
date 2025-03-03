@@ -7,30 +7,29 @@ const HomePage = () => {
   return (
     <div className="container mt-4">
       <h1 className="text-center mb-4">Bebé Políglota</h1>
-      <ul className="list-group">
+      <div className="row row-cols-1 row-cols-md-3 g-4">
         {videoData.map((dvd) => (
-          <li
-            key={dvd.id}
-            className="list-group-item d-flex justify-content-between align-items-center"
-          >
-            <div className="d-flex align-items-center">
-              {/* Mostrar la primera bandera */}
-              <Flag
-                code={dvd.primaryFlagCode}
-                style={{ width: "30px", height: "20px", marginRight: "10px" }}
-              />
-              {/* Mostrar la segunda bandera */}
-              <Flag
-                code={dvd.secondaryFlagCode}
-                style={{ width: "30px", height: "20px", marginRight: "10px" }}
-              />
+          <div key={dvd.id} className="col">
+            <div className="card h-100 p-3 d-flex align-items-center text-center">
+              <div className="d-flex justify-content-center mb-2">
+                {/* Mostrar la primera bandera */}
+                <Flag
+                  code={dvd.primaryFlagCode}
+                  style={{ width: "50px", height: "20px", marginRight: "10px" }}
+                />
+                {/* Mostrar la segunda bandera */}
+                <Flag
+                  code={dvd.secondaryFlagCode}
+                  style={{ width: "50px", height: "20px", marginRight: "10px" }}
+                />
+              </div>
               <Link to={`/dvd/${dvd.id}`} className="text-decoration-none text-dark">
                 {dvd.title}
               </Link>
             </div>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
