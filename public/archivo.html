@@ -293,40 +293,68 @@ button:disabled {
 }
 
 /* --- Estilos de Login --- */
+
+
 .login-container {
     position: fixed;
     width: 100%;
-    height: 120%;
-    background-color: rgba(0, 0, 0, 1.0);
+    height: 100%;
+    background-color: #f9f9f9; /* fondo claro */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    font-family: Arial, sans-serif;
 }
 
 .login-box {
-    background-color: rgb(31, 39, 83);
-    padding: 20px 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     text-align: center;
-    
+    width: 320px;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.login-box input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
 }
 
 #loginBtn {
-  background-color: #4a90e2; /* azul */
-  color: white;             /* texto blanco */
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
 }
 
 #loginBtn:hover {
-  background-color: #357ABD; /* azul más oscuro cuando pasas el mouse */
+    background-color: #357ABD;
 }
+
 
 
 .hidden {
