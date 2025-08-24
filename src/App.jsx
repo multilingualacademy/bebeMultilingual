@@ -1,6 +1,5 @@
-import React from "react";
-import AppRouter from "./router/AppRouter";
 
+/*
 function App() {
   return (
     <div>
@@ -13,9 +12,11 @@ export default App;
 
 
 // src/App.jsx
-
-/*import { useState } from "react";
+*/
+import { useState } from "react";
 import "./App.css";
+import React from "react";
+import AppRouter from "./router/AppRouter";
 
 const VALID_CREDENTIALS = [
   { username: "rraj", password: "rrajrraj" },
@@ -81,4 +82,3 @@ function App() {
 }
 
 export default App;
-*/
