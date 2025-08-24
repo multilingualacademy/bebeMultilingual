@@ -5,6 +5,41 @@
   text-align: center;
 }
 
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black;
+  color: white;
+}
+
+.login-box {
+  background: #222;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-box input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
