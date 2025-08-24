@@ -52,20 +52,20 @@ function App() {
     return (
       <div className="login-container">
         <div className="login-box">
-          <h2>Anmeldung</h2>
-          <label>Benutzer:</label>
+          <h2>Login</h2>
+          <label>User:</label>
           <input
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
-          <label>Passwort:</label>
+          <label>Password:</label>
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button onClick={handleLogin}>Anmeldeprotokoll</button>
+          <button onClick={handleLogin}>login</button>
           {error && <p className="error-message">{error}</p>}
         </div>
       </div>
