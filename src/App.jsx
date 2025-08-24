@@ -73,9 +73,8 @@ function App() {
   }
 
   return (
-    <div id="content" className="content-container">
-      <h1>Bienvenido 🎉</h1>
-      <p>Aquí va todo el contenido de tu proyecto React.</p>
+    <div>
+      <AppRouter />
     </div>
   );
 }
